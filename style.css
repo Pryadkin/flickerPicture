@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('1220.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cell {
+    background-color:black;
+    /* transition: 0.5s; */
+}
+.cell:hover {
+    opacity: 0;
+}
