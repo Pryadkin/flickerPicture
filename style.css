@@ -16,8 +16,8 @@
 
 .cell {
     background-color:black;
-    /* transition: 0.5s; */
 }
+
 .cell:hover {
     opacity: 0;
 }

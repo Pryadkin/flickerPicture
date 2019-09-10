@@ -1,6 +1,7 @@
-(function flickerPicture(speed, cycle, countOpenElem, transition) {
+function flickerPicture(turnOn, speed, cycle, countOpenElem, transition) {
 
     const flickerPicture = {
+        turnOn,
         countElem: 25,
         speed,
         cycle,
@@ -56,8 +57,11 @@
                 setTimeout(rendCell, speed);
             }
         }, speed);
-
     }
-    getRandomCell(flickerPicture.speed, flickerPicture.cycle, flickerPicture.countOpenElem);
+    if (flickerPicture.turnOn) {
+        getRandomCell(flickerPicture.speed, flickerPicture.cycle, flickerPicture.countOpenElem);
+    }
 
-})(100, true, 15, 0.5);
+};
+
+flickerPicture(false, 100, false, 15, 0.2);
